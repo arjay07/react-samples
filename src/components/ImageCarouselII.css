@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.image-container {
+.animated-carousel .image-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.image-container img {
+.animated-carousel .image-container img {
   object-fit: cover;
 }
 

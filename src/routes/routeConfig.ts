@@ -14,8 +14,8 @@ export const routes: RouteConfig[] = [
         component: ImageCarouselView,
     },
     {
-        label: "Image Carousel II",
+        label: "Image Carousel II (Animated)",
         path: "/image-carousel-ii",
         component: ImageCarouselViewII,
-    }
+    },
 ].sort((a, b) => a.label.localeCompare(b.label));
