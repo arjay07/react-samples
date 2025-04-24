@@ -28,7 +28,14 @@ const images = [
     },
   ];
 const ImageCarouselView: React.FC = () => {
-    return <ImageCarousel images={images} />;
+    return <>
+      <div className="referenceLink">
+        <a className="btnLink" href="https://www.greatfrontend.com/questions/user-interface/image-carousel" target="_blank" rel="noopener noreferrer">
+          Open Challenge on GreatFrontEnd: <span className="fw-bold">Image Carousel</span>
+        </a>
+      </div>
+      <ImageCarousel images={images} />
+    </>;
 };
 
 export default ImageCarouselView;
