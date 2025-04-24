@@ -18,13 +18,22 @@ export default function ImageCarousel({
     setCurrentImageIndex(prevIndex >= 0 ? prevIndex : images.length - 1);
   };
 
+  const transformContainerStyle = (index: number) => {
+    const width = 600;
+    const offset = index * width;
+    return {
+      transform: `translateX(-${offset}px)`,
+      transition: "transform 0.5s ease-in-out",
+    };
+  }
+
   return (
-    <div className="carousel">
-      {images.map(({ alt, src }, index) => {
-        return index === currentImageIndex ? (
-          <img key={src} alt={alt} src={src} />
-        ) : null;
-      })}
+    <div className="animated-carousel">
+      <div className="image-container">
+        {images.map(({ alt, src }) => (
+          <img key={src} alt={alt} src={src} style={transformContainerStyle(currentImageIndex)}/>
+        ))}
+      </div>
       <div className="controls">
         <button className="prevBtn" onClick={prevImage}>
           <span className="visually-hidden">Previous</span>

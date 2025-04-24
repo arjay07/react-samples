@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCarousel from "../components/ImageCarousel";
+import ImageCarouselII from "../components/ImageCarouselII";
 
 const images = [
     {
@@ -34,7 +34,7 @@ const ImageCarouselView: React.FC = () => {
           Open Challenge on GreatFrontEnd: <span className="fw-bold">Image Carousel II</span>
         </a>
       </div>
-      <ImageCarousel images={images} />
+      <ImageCarouselII images={images} />
     </>;
 };
 
