@@ -37,6 +37,7 @@
     right: 0;
     left: auto;
     border-radius: 0.25rem;
+    border: 1px solid #ccc;
 }
 
 .navbar .dropdown-content a {
