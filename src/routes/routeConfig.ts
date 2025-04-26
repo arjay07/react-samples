@@ -1,5 +1,6 @@
 import ImageCarouselView from "../views/ImageCarouselView";
 import ImageCarouselViewII from "../views/ImageCarouselViewII";
+import JobBoardView from "../views/JobBoardView";
 
 export type RouteConfig = {
     label: string;
@@ -18,4 +19,9 @@ export const routes: RouteConfig[] = [
         path: "/image-carousel-ii",
         component: ImageCarouselViewII,
     },
+    {
+        label: "Job Board",
+        path: "/job-board",
+        component: JobBoardView,
+    }
 ].sort((a, b) => a.label.localeCompare(b.label));
