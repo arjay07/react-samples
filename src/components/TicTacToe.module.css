@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameStatus {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-rows: 70px 70px 70px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 210px;
+    height: 210px;
+}
+
+.gameboard .row {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+}
+
+.gameboard .row>button {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.resetBtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: 2px solid #777;
+    color: #777;
+    margin: 15px 0 15px 0;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.resetBtn:hover,
+.gameboard .row>button:hover {
+    background-color: #eee;
+}
+
+.resetBtn:active,
+.gameboard .row>button:active {
+    background-color: #ccc;
+}

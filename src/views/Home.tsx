@@ -1,9 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { routes } from '../routes/routeConfig';
 
 const Home: React.FC = () => {
     return (
-        <div>
-            <h1>Hello, World!</h1>
+        <div className='container'>
+            <h1 className='home-header'>React Component Samples</h1>
+            <div className='home-flowing-links'>
+                {routes.map((route) => (
+                    <Link key={route.path} to={route.path} className='home-link'>
+                        {route.label}
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 };

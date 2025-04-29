@@ -66,3 +66,42 @@ a {
 .visually-hidden {
     display: none;
 }
+
+.home-link {
+    display: block;
+    color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    border: 2px solid #000;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    text-align: center;
+}
+
+.home-link:hover {
+    background-color: #eee;
+}
+
+.home-link:active {
+    background-color: #000;
+    color: #eee;
+}
+
+.home-flowing-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
