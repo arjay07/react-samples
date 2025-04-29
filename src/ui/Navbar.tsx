@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
             <div className="navbar-container">
                 <div className="branding">
                     <Link to="/">
-                        React Samples
+                        React Component Samples
                     </Link>
                 </div>
                 <div className="dropdown">
