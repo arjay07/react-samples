@@ -1,5 +1,6 @@
 import ImageCarouselView from "../views/ImageCarouselView";
 import ImageCarouselViewII from "../views/ImageCarouselViewII";
+import ModalDialogView from "../views/ModalDialogView";
 import TicTacToeView from "../views/TicTacToeView";
 
 export type RouteConfig = {
@@ -23,5 +24,10 @@ export const routes: RouteConfig[] = [
         label: "Tic Tac Toe",
         path: "/tic-tac-toe",
         component: TicTacToeView,
+    },
+    {
+        label: "Modal Dialog",
+        path: "/modal-dialog",
+        component: ModalDialogView,
     }
 ].sort((a, b) => a.label.localeCompare(b.label));
